@@ -76,7 +76,7 @@ body {
         }
 
         a {
-            @apply cursor-pointer text-nowrap md:text-base text-sm;
+            @apply cursor-pointer text-nowrap md:text-base text-sm hover:text-yellow;
         }
 
         ul {
@@ -89,7 +89,7 @@ body {
     }
 
     #hero {
-        @apply relative z-10 min-h-dvh w-full border border-transparent;
+        @apply relative z-10 min-h-dvh w-full border border-transparent overflow-hidden;
 
         h1 {
             @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-modern-negra;
@@ -212,7 +212,7 @@ body {
         }
 
         .badge {
-            @apply inline-block rounded-full bg-white text-black px-4 py-2 text-sm font-medium mb-8;
+            @apply inline-block rounded-full bg-white text-black px-4 py-2 text-sm font-medium mb-8 hover:text-white hover:bg-yellow;
         }
 
         .top-grid {
@@ -346,6 +346,11 @@ body {
 
     #contact {
         @apply relative md:mt-20 mt-0 px-4 text-center w-full overflow-hidden radial-gradient;
+
+        a {
+            @apply cursor-pointer opacity-70 hover:opacity-100 hover:scale-110 transition-all duration-300;
+        }
+
 
         #f-left-leaf {
             @apply absolute bottom-0 left-0 pointer-events-none lg:w-fit w-1/3;
